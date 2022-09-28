@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+.app {
+    padding: 50px;
+    height: 100vh;
+    
+
+}
+
+
+h1 { 
+    color: white;
+    text-shadow: 2px 2px #ff0000;
+}
+
+h1 > span {
+    display: block;
+    color: darken(white, 20%);
+    font-size: 14px;
+    font-style: italic;
+    height: 14px;
+}
+.note-form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+
+   
+
+   
+}
+
+.note-form > button {
+    width: 100%;
+    background-color: #fff27f;
+    cursor: pointer;
+    padding: 10px; 
+    border: 0;
+    outline: none;
+    
+}
+
+.note-form > button:hover {
+    background-color: tomato;
+    color: white;
+}
+
+.note-form > textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid lightgrey;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100px;
+    padding: 10px;
+    outline: none;
+}
+
+.note {
+    position: absolute;
+    cursor: pointer;
+    background-image: url('assets/post-it-note.png');
+    background-size: cover;
+    top: 100px;
+    left: 300px;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+}
+
+.note > .text {
+    font-family: 'Karla', sans-serif;
+    height: 100%;
+    width: 100%;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    padding: 15px;
+    
+}
+
+.note > .close {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 15px;
+    transition: transform .3s ease;
+}
+
+.note > .close:hover {
+    transform: scale(1.6);
+}
