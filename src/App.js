@@ -8,7 +8,7 @@ import rootReducer from './createSlice/slice'
 export function App() {
 
   const store = configureStore({
-    reducer: rootReducer
+    reducer: 
   })
   return (
   //  <Notes/>
