@@ -5,6 +5,8 @@ import Notes1 from './createSlice/Notes1'
 import rootReducer from './createSlice/slice'
 // import { Notes } from './Notes'
 
+
+
 export function App() {
 
   const store = configureStore({
@@ -17,4 +19,5 @@ export function App() {
   </Provider>
   )
 }
+
 
